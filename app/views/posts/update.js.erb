@@ -1,0 +1,7 @@
+$("#modalEditPost_<%= @post.id %>").modal('hide')
+$(".modal-backdrop").remove()
+
+$("#post_title").val("")
+$("#post_content").val("")
+
+$("#container_posts").html('<%= j render @posts %>')

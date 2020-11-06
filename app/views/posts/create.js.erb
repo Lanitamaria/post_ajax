@@ -1,0 +1,8 @@
+// console.log("hola")
+$(function() {
+    $("#modalNewPost").modal('hide')
+    $("#post_title").val("")
+    $("#post_content").val("")
+
+    $("#container_posts").append('<%= j render @post %>')
+})
